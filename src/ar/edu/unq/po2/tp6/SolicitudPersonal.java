@@ -13,7 +13,7 @@ public class SolicitudPersonal extends SolicitudCredito {
 		return this.suficientesIngresosAnuales() && this.montoNoExcede(70);
 	}
 
-	// Metodos propios
+	// Metodos propioss
 	private boolean suficientesIngresosAnuales() {
 		return (this.getCliente().netoAnual() >= 15000);
 	}
