@@ -2,11 +2,11 @@ package ar.edu.unq.po2.tp6;
 
 public abstract class SolicitudCredito {
 	private final Cliente cliente;
-	private final int montoSolicitado;
+	private final double montoSolicitado;
 	private final int plazoMeses;
 	
 	// Constructor
-	public SolicitudCredito(Cliente cliente, int montoSolicitado, int plazoMeses) {
+	public SolicitudCredito(Cliente cliente, double montoSolicitado, int plazoMeses) {
 		this.cliente = cliente;
 		this.montoSolicitado = montoSolicitado;
 		this.plazoMeses = plazoMeses;
@@ -17,7 +17,7 @@ public abstract class SolicitudCredito {
 		return this.cliente;
 	}
 
-	public int getMontoSolicitado() {
+	public double getMontoSolicitado() {
 		return this.montoSolicitado;
 	}
 
@@ -27,7 +27,7 @@ public abstract class SolicitudCredito {
 
 	// Metodos principales
 	public double montoMensual() {
-		return (double) this.montoSolicitado / this.plazoMeses;
+		return this.montoSolicitado / this.plazoMeses;
 	}
 	
 	public abstract boolean esAceptable();
@@ -35,6 +35,6 @@ public abstract class SolicitudCredito {
 	protected boolean montoNoExcede(double porcentaje) {
 		double limiteDeMonto = this.getCliente().getNetoMensual() * (porcentaje / 100);
 		
-		return this.getMontoSolicitado() <= limiteDeMonto;
+		return this.montoMensual() <= limiteDeMonto;
 	}
 }

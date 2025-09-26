@@ -8,7 +8,6 @@ public class Banco {
 	
 	// Constructor
 	public Banco(ArrayList<Cliente> clientes, ArrayList<SolicitudCredito> solicitudesCredito) {
-		super();
 		this.clientes = clientes;
 		this.solicitudesCredito = solicitudesCredito;
 	}
@@ -25,5 +24,9 @@ public class Banco {
 	//Metodos principales
 	public void agregarCliente(Cliente cliente) {
 		this.clientes.add(cliente);
+	}
+	
+	public void agregarSolicitud(SolicitudPersonal solicitud) {
+		this.solicitudesCredito.add(solicitud);
 	}
 }

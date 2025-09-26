@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp6;
 public class SolicitudPersonal extends SolicitudCredito {
 
 	// Constructor
-	public SolicitudPersonal(Cliente cliente, int montoSolicitado, int plazoMeses) {
+	public SolicitudPersonal(Cliente cliente, double montoSolicitado, int plazoMeses) {
 		super(cliente, montoSolicitado, plazoMeses);
 	}
 
@@ -13,7 +13,7 @@ public class SolicitudPersonal extends SolicitudCredito {
 		return this.suficientesIngresosAnuales() && this.montoNoExcede(70);
 	}
 
-	// Metodos propioss
+	// Metodos propios
 	private boolean suficientesIngresosAnuales() {
 		return (this.getCliente().netoAnual() >= 15000);
 	}

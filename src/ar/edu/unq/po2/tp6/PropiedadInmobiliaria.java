@@ -3,11 +3,10 @@ package ar.edu.unq.po2.tp6;
 public class PropiedadInmobiliaria {
 	private final String descripcion;
 	private final String direccion;
-	private final int valorFiscal;
+	private final double valorFiscal;
 	
 	// Constructor
-	public PropiedadInmobiliaria(String descripcion, String direccion, int valorFiscal) {
-		super();
+	public PropiedadInmobiliaria(String descripcion, String direccion, double valorFiscal) {
 		this.descripcion = descripcion;
 		this.direccion = direccion;
 		this.valorFiscal = valorFiscal;
@@ -22,7 +21,7 @@ public class PropiedadInmobiliaria {
 		return direccion;
 	}
 
-	public int getValorFiscal() {
+	public double getValorFiscal() {
 		return valorFiscal;
 	}
 }

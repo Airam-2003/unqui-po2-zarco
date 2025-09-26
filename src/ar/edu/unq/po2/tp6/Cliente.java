@@ -8,7 +8,7 @@ public class Cliente {
 	private double netoMensual;
 	
 	// Constructor
-	public Cliente(String nombre, String apellido, String direccion, int edad, int netoMensual) {
+	public Cliente(String nombre, String apellido, String direccion, int edad, double netoMensual) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.direccion = direccion;
