@@ -8,7 +8,17 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/julia/OneDrive/Desktop/Mis cosas/Archivos de la facultad/Materias Cursando/Programación con Objetos 2/JARs Mockito/byte-buddy-1.15.7.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/julia/OneDrive/Desktop/Mis cosas/Archivos de la facultad/Materias Cursando/Programación con Objetos 2/JARs Mockito/mockito-core-5.14.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/julia/OneDrive/Desktop/Mis cosas/Archivos de la facultad/Materias Cursando/Programación con Objetos 2/JARs Mockito/net.bytebuddy.byte-buddy-agent_1.15.7.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
