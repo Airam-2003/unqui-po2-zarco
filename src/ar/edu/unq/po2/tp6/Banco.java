@@ -29,4 +29,14 @@ public class Banco {
 	public void agregarSolicitud(SolicitudPersonal solicitud) {
 		this.solicitudesCredito.add(solicitud);
 	}
+	
+	public double montoTotalADesembolsar() {
+		double montoTotal = 0.0;
+		
+		for (SolicitudCredito solicitud : solicitudesCredito) {
+			if(solicitud.esAceptable()) { montoTotal += solicitud.getMontoSolicitado(); }
+		}
+		
+		return montoTotal;
+	}
 }
